@@ -1,87 +1,180 @@
-# Frontend Mentor - QR code component
+# Frontend Mentor - QR code component solution
 
-![Design preview for the QR code component coding challenge](./preview.jpg)
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### Screenshot
 
-## The challenge
+![](./screenshot.jpg)
 
-Your challenge is to build out this QR code component and get it looking as close to the design as possible.
+### Links
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- Solution URL: [qr-code-component](https://epramh.github.io/qr-code-component/)
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+## My process
 
-## Where to find everything
+### Built with 🛠️
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+- Semantic HTML5 markup
+- CSS custom properties
+- Internal CSS `<style>` block
+- Mobile-first workflow
+- Google Fonts (`Outfit`)
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### What I learned
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+This project was a great exercise in creating a simple, centered card layout and managing basic CSS styling.
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+Here are a few things I focused on:
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+**1. Centering a component using `margin: auto`**
+I used `margin: auto` on the `.card` container to horizontally center it within the page, in combination with a defined `width`.
 
-## Building your project
+```css
+.card {
+  /* ... other styles ... */
+  margin: auto;
+  margin-top: 4rem; /* For vertical positioning */
+  width: 20%; /* Setting a proportional width */
+}
+```
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+**2. Applying basic shadows for depth** I learned how to apply a subtle box-shadow to give the card a raised effect and a deeper shadow on hover for a basic interaction.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+CSS
 
-## Deploying your project
+/_ Add shadows to create the "card" effect _/
+box-shadow: 0px 10px 20px hsl(216, 15%, 48%);
+/_ On mouse-over, add a deeper shadow _/
+.card:hover {
+box-shadow: 0 20px 40px 0 hsl(218, 44%, 22%);
+}
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+**3. Using `border-radius` and `overflow: hidden`**To ensure the image corners matched the card's rounded corners, I applied border-radius to both the card and the image. Using overflow: hidden on the card is a good practice to contain content within rounded borders.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+.card {
+border-radius: 20px;
+overflow: hidden; /_ Important for containing content within rounded corners _/
+}
+.card img {
+border-radius: 10px;
+}
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Continued development
 
-## Create a custom `README.md`
+sdfsdfCoding partner
+Hello! I'd be happy to help you fill out your project's README template. Creating a good README is a crucial step for showcasing your work and documenting your process! 🚀
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+Based on the HTML and CSS you provided for the QR code component, here is the completed README content.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+📝 Completed README Content
+Markdown
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+# Frontend Mentor - QR code component solution
 
-## Submitting your solution
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## Table of contents
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-## Sharing your solution
+## Overview
 
-There are multiple places you can share your solution:
+### Screenshot
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+![Screenshot of the completed QR code component solution](./screenshot.jpg)
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+### Links
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+- Solution URL: [qr-code-component](https://github.com/epramh/qr-code-component.git)
 
-## Got feedback for us?
+## My process
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+### Built with
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+- Semantic HTML5 markup
+- CSS custom properties (implicitly used with colors like `hsl(212, 45%, 89%)`)
+- **Internal CSS `<style>` block**
+- **Mobile-first workflow (implied)**
+- **Google Fonts** (`Outfit`)
 
-**Have fun building!** 🚀
+### What I learned
+
+This project was a great exercise in creating a simple, centered card layout and managing basic CSS styling.
+
+Here are a few things I focused on:
+
+**1. Centering a component using `margin: auto`**
+I used `margin: auto` on the `.card` container to horizontally center it within the page, in combination with a defined `width`.
+
+```css
+.card {
+  /* ... other styles ... */
+  margin: auto;
+  margin-top: 4rem; /* For vertical positioning */
+  width: 20%; /* Setting a proportional width */
+}
+```
+
+**2. Applying basic shadows for depth** I learned how to apply a subtle box-shadow to give the card a raised effect and a deeper shadow on hover for a basic interaction.
+
+CSS
+/_ Add shadows to create the "card" effect _/
+box-shadow: 0px 10px 20px hsl(216, 15%, 48%);
+/_ On mouse-over, add a deeper shadow _/
+.card:hover {
+box-shadow: 0 20px 40px 0 hsl(218, 44%, 22%);
+}
+
+**3. Using `border-radius` and `overflow: hidden`** To ensure the image corners matched the card's rounded corners, I applied border-radius to both the card and the image. Using overflow: hidden on the card is a good practice to contain content within rounded borders.
+
+CSS
+.card {
+border-radius: 20px;
+overflow: hidden; /_ Important for containing content within rounded corners _/
+}
+.card img {
+border-radius: 10px;
+}
+
+### Continued development
+
+I want to continue focusing on making my styling more scalable and organized in future projects. Specific areas to focus on include:
+
+##1. External CSS: Moving the internal <style> block into a separate external CSS file (style.css) for better separation of concerns and maintainability.
+
+2. Responsive Design: Implementing media queries to ensure the card's width and overall layout adjust optimally across all screen sizes, especially for smaller mobile devices, rather than relying on a fixed percentage width.
+
+3. Flexbox or Grid for Centering: Exploring using Flexbox or CSS Grid to handle both horizontal and vertical centering of the main component more robustly.
+
+### Useful resources
+
+- [Google Fonts](https://fonts.google.com/specimen/Outfit) - Used to easily import the Outfit font for the project.
+- [The Markdown Guide](https://www.markdownguide.org/) - A helpful reference for structuring the README file.
+
+## Author
+
+- Website - [My Portfolio](ravo-portfolio.fwh.is)
+- Frontend Mentor - [@epramh](https://www.frontendmentor.io/profile/epramh)
