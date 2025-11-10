@@ -30,10 +30,16 @@
         overflow: hidden;
         text-align: center;
         transition: 0.3s;
+        width: 50%;
       }
       /* On mouse-over, add a deeper shadow */
       .card:hover {
         box-shadow: 0 20px 40px 0 hsl(218, 44%, 22%);
+      }
+      .card img {
+        border-radius: 8%;
+        padding: 1rem;
+        width: 90%;
       }
       /* Add some padding inside the card container */
       .container {
@@ -50,7 +56,7 @@
   </head>
   <body>
     <div class="card">
-      <img src="./images/image-qr-code.png" alt="QR Code" style="width: 100%" />
+      <img src="./images/image-qr-code.png" alt="QR Code" />
       <div class="container">
         Improve your front-end skills by building projects Scan the QR code to
         visit Frontend Mentor and take your coding skills to the next level
