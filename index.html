@@ -16,6 +16,29 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      body {
+        background-color: hsl(212, 45%, 89%);
+      }
+      .card {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 15px;
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0px 10px 20px hsl(216, 15%, 48%);
+        font-family: "Outfit", sans-serif;
+        margin: auto;
+        margin-top: 10vh;
+        overflow: hidden;
+        text-align: center;
+        transition: 0.3s;
+      }
+      /* On mouse-over, add a deeper shadow */
+      .card:hover {
+        box-shadow: 0 20px 40px 0 hsl(218, 44%, 22%);
+      }
+      /* Add some padding inside the card container */
+      .container {
+        padding: 2px 16px;
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -27,7 +50,7 @@
   </head>
   <body>
     <div class="card">
-      <img src="./images/image-qr-code.png" alt="QR Code" />
+      <img src="./images/image-qr-code.png" alt="QR Code" style="width: 100%" />
       <div class="container">
         Improve your front-end skills by building projects Scan the QR code to
         visit Frontend Mentor and take your coding skills to the next level
