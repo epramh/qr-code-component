@@ -4,6 +4,7 @@
   --light-gray: hsl(212, 45%, 89%);
   --grayish-blue: hsl(216, 15%, 48%);
   --dark-blue: hsl(218, 44%, 22%);
+  --link: hsl(228, 45%, 44%);
 }
 
 * {
@@ -81,5 +82,5 @@ body {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--link);
 }
