@@ -1,0 +1,75 @@
+/* --- Variables & Reset --- */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(216, 15%, 48%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* --- Card Styling --- */
+.card {
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
+  max-width: 320px; /* Limits width on desktop */
+  width: 20%; /* Makes it responsive on mobile */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.text-container {
+  padding: 24px 12px;
+}
+
+.title {
+  color: var(--dark-blue);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.description {
+  color: var(--grayish-blue);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* --- Footer --- */
+.attribution {
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
