@@ -50,11 +50,14 @@ body {
 /* Add some padding inside the card container */
 .container p:first-child,
 .container p:nth-child(1) {
+  font-weight: 700;
   padding: 10px 0;
 }
 
 .container p:nth-child(2) {
+  color: hsl(216, 15%, 48%);
   font-size: 12px;
+  font-weight: 400;
 }
 
 .title {
