@@ -79,6 +79,8 @@ body {
 .attribution {
   font-size: 11px;
   margin-top: 20px;
+  bottom: 10px;
+  position: absolute;
 }
 
 .attribution a {
