@@ -30,12 +30,14 @@ body {
   border-radius: 20px;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
   max-width: 320px; /* Limits width on desktop */
-  width: 20%; /* Makes it responsive on mobile */
+  width: 18%; /* Makes it responsive on mobile */
   text-align: center;
   transition: transform 0.3s ease;
 }
 
+/* On mouse-over, add a deeper shadow */
 .card:hover {
+  box-shadow: 0 20px 40px 0 var(--grayish-blue);
   transform: scale(1.02);
 }
 
@@ -45,8 +47,14 @@ body {
   display: block;
 }
 
-.text-container {
-  padding: 24px 12px;
+/* Add some padding inside the card container */
+.container p:first-child,
+.container p:nth-child(1) {
+  padding: 10px 0;
+}
+
+.container p:nth-child(2) {
+  font-size: 12px;
 }
 
 .title {
