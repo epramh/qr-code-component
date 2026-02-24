@@ -33,13 +33,21 @@ body {
   max-width: 320px; /* Limits width on desktop */
   width: 18%; /* Makes it responsive on mobile */
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 2s ease-in-out;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 20px 40px 0 var(--grayish-blue);
-  transform: scale(1.02);
+  /* Scale effect */
+  /* transform: scale(1.02); */
+  /* Rotation effect */
+  -webkit-transform: translateZ(-1000px) rotateY(90deg);
+  -moz-transform: translateZ(-1000px) rotateY(90deg);
+  -ms-transform: translateZ(-1000px) rotateY(90deg);
+  -o-transform: translateZ(-1000px) rotateY(90deg);
+  transform: translateZ(0px) rotateY(360deg);
+  transition: transform 2s ease-in-out;
 }
 
 .card img {
