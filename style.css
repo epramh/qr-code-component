@@ -130,6 +130,10 @@ body {
   .title {
     font-size: 18px;
   }
+
+  .description {
+    padding: 0 5px;
+  }
 }
 
 /* Adjust card width for medium screens (medium/tablet)*/
