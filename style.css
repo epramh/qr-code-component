@@ -121,6 +121,14 @@ body {
 }
 
 /* --- Responsive Design Start --- */
+
+/* Adjust card width for extra small screens (mobile) */
+@media (max-width: 576px) {
+  .card {
+    width: 46%;
+  }
+}
+
 /* Adjust card width for smaller screens (Small Mobile)*/
 @media (min-width: 640px) {
   .card {
