@@ -135,4 +135,11 @@ body {
   }
 }
 
+/* Adjust card width for larger screens (large/desktop),*/
+@media (min-width: 1024px) {
+  .card {
+    width: 25%;
+  }
+}
+
 /* --- Responsive Design End --- */
