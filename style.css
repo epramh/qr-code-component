@@ -156,4 +156,11 @@ body {
   }
 }
 
+/* Adjust card width for extra extra extra large screens (extra-extra-extra-large/desktop) */
+@media (min-width: 1920px) {
+  .card {
+    width: 13%;
+  }
+}
+
 /* --- Responsive Design End --- */
