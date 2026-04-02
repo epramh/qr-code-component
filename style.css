@@ -119,3 +119,11 @@ body {
 .attribution a {
   color: var(--link);
 }
+
+/* --- Responsive Design --- */
+/* Adjust card width for smaller screens */
+@media (max-width: 640px) {
+  .card {
+    width: 40%;
+  }
+}
