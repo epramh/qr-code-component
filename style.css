@@ -126,6 +126,10 @@ body {
   .card {
     width: 40%;
   }
+
+  .title {
+    font-size: 18px;
+  }
 }
 
 /* Adjust card width for medium screens (medium/tablet)*/
