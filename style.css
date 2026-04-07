@@ -18,10 +18,8 @@
 body {
   font-family: "Outfit", sans-serif;
   background-color: var(--light-gray);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  justify-items: center;
   min-height: 100vh;
   padding: 20px;
 }
@@ -35,8 +33,6 @@ body {
   padding: 16px;
   max-width: 320px; /* Limits width on desktop */
   width: 18%; /* Makes it responsive on mobile */
-  overflow: hidden;
-  position: relative;
   text-align: center;
   transition: transform 2s ease-in-out;
 }
