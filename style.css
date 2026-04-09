@@ -95,8 +95,8 @@ body {
 .title {
   color: var(--dark-blue);
   font-weight: 700;
-  padding: 10px 0;
   line-height: 1.2;
+  padding: 10px 0;
 }
 
 .description {
