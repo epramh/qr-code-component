@@ -53,10 +53,10 @@ body {
   transition: transform 2s ease-in-out;
 }
 
-.card:hover::before {
+/* .card:hover::before {
   top: 100%;
   left: 100%;
-}
+} */
 .card::before {
   content: "";
   position: absolute;
