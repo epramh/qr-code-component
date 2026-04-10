@@ -74,9 +74,9 @@ body {
 }
 
 .card img {
-  width: 100%;
   border-radius: 10px;
   display: block;
+  width: 100%;
 }
 
 /* Add some padding inside the card container */
