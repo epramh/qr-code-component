@@ -95,7 +95,7 @@ body {
   color: var(--dark-blue);
   font-weight: 700;
   line-height: 1.2;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .description {
@@ -126,6 +126,10 @@ body {
   }
   .title {
     font-size: 0.9vw;
+  }
+  .description {
+    font-size: 0.82vw;
+    padding: 0 22px 20px;
   }
 }
 
