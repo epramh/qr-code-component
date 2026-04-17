@@ -42,9 +42,6 @@ body {
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 20px 40px 0 var(--grayish-blue);
-  /* Scale effect */
-  /* transform: scale(1.02); */
-  /* Rotation effect */
   -webkit-transform: translateZ(-1000px) rotateY(90deg);
   -moz-transform: translateZ(-1000px) rotateY(90deg);
   -ms-transform: translateZ(-1000px) rotateY(90deg);
