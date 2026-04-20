@@ -35,7 +35,7 @@ body {
   margin: 0 auto;
   width: min(100%, 240px);
   /* Responsive grid layout End */
-  padding: 16px;
+  padding: 12px;
   text-align: center;
   transition: transform 2s ease-in-out;
 }
