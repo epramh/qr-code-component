@@ -122,7 +122,7 @@ body {
 /* Adjust card width for extra extra extra large screens (extra-extra-extra-large/desktop) */
 @media (min-width: 1920px) {
   .card {
-    width: 17%;
+    width: 16%;
   }
   .title {
     font-size: 1.1vw;
